@@ -16,11 +16,15 @@
     font-size: @font-size;
     border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
+    -webkit-clip-path:polygon(5% 0%, 0% 100%,100% 100%,95% 0%);
     &.active {
       color: @text-color-selected;
+      font-size: 15px;
       background-color: @tab-background-color-active;
     }
-
+    &.sortable:hover{
+      font-size: 17px;
+    }
 
     // Modified Icon (the blue circle) -------------------
     &.modified:not(:hover) .close-icon {
