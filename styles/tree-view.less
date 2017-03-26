@@ -13,8 +13,21 @@
 .tree-view {
   color: @text-color;
   background-color: @tree-view-background-color;
-
+  .list-nested-item.selected::before{
+    background-color: @list-item-selected-background-color;
+  }
+  .list-item{
+    color: @list-item-color;
+  }
   .list-item.selected {
     color: @text-color-selected;
+    font-size: @selected-font-size;
+  }
+  .list-item.selected::before {
+    background-color: @list-item-selected-background-color;
+  }
+  .list-item:hover{
+    font-size: @hover-font-size;
+    //color: @text-color-hover;
   }
 }
